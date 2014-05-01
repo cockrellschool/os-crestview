@@ -1,0 +1,149 @@
+// HEADER
+
+
+// Sheild
+
+#scholar-shield {
+	width: auto;
+	text-align: left;
+	margin-top: 25px;
+}
+
+
+// UT Logo 
+.ut-logo{
+	width: 100px;
+	height: 50px;
+	float: right;
+	margin-top: -45px; 
+	background-repeat: no-repeat;
+	display:none;
+
+	@include breakpoint($tablet-break) {  
+		display: block;
+		background: url(../images/utlogo.png) no-repeat
+	}
+}
+
+.region.region-header-second{
+	width:100%
+}
+.region.region-header-third{
+	position: absolute;
+	top: -75px;
+	display:none;
+
+	@include breakpoint($tablet-break) {  
+		width: 600px;
+		display: block;
+	}
+}
+
+
+#header {
+	font-family: $headerfont;
+	font-weight: normal;
+	background:none;
+	// height:90px;
+
+	p{
+		font-size:1.3em;
+	}
+
+	.region-inner {
+		padding: 0;
+	}
+
+	@include breakpoint($mobile-break) {  
+		height:80px;
+	}
+	@include breakpoint($tablet-break) {  
+		height:120px;
+	}
+ 
+}
+
+
+#header-panels {
+	// padding-bottom: 15px;
+}
+.region-header-second #block-os-primary-menu {
+	max-width:700px;
+}
+
+#header-container .gpanel .region {
+	clear: none;
+	display: inline-block;
+	vertical-align: bottom;
+} 
+
+.boxes-box-content{
+	position: relative;
+}
+
+
+#boxes-box-site_info h1 a:link,
+#boxes-box-site_info h1 a:visited,
+#boxes-box-site_info h1 a:active{
+	color:$blue;	
+	letter-spacing: -.05;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+
+}
+
+#boxes-box-site_info p{
+
+	position: absolute;
+	right: 0;
+	top: 5px;
+	font-family:$bodyfont;
+	display: none;
+
+	@include breakpoint($tablet-break) {  
+		display: block;
+	}
+}
+
+.block-boxes-os_boxes_site_info h1 {
+	margin: .5em 0 0 0;
+	line-height:1em;
+	font-style: normal;
+	font-family: $headerfont;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+
+	@include breakpoint($mobile-break) {  
+		margin: .5em 0 0 0;
+		font-size: 2.2rem;
+	}
+	@include breakpoint($tablet-break) {  
+		margin: .65em 0 0 0;
+		font-size: 2.6rem;
+	}
+}
+
+.block-boxes-os_boxes_site_info h2 {
+  line-height:1.3em;
+  font-family: $headerfont;
+  // margin-top: .25em;
+  font-size: 1.25em;
+
+  font-size: 1em;
+	@include breakpoint($tablet-break) {  
+		 font-size: 1.6em;
+	}
+ }
+
+.block-boxes-os_boxes_site_info h1 a, .block-boxes-os_boxes_site_info h1 a:visited {
+	font-weight: bold;
+	color: $orange;
+  }
+#page-title {
+	margin-bottom: 1.5em;
+	font-size: 1.5em;
+    line-height: 1.083em;
+	font-family: $bodyfont;
+	font-weight:normal;
+}
+
+

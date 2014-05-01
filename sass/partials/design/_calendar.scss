@@ -1,0 +1,106 @@
+.view-id-os_image_gallery .views-field-title .field-content a {
+font-weight: normal;
+}
+.node-person .field-name-field-professional-title {
+font-weight: normal;
+}
+#main-content {
+	font-family: $bodyfont;
+}
+
+.attachment.attachment-before{
+	display:none;
+}
+
+#block-views-os-events-block-1 .view-header {
+	height: 2.5em;
+}
+
+
+
+.view-os-events a.colorbox-inline {
+	color: white;
+}
+.view-os-events a:hover.colorbox-inline {
+	color: #ededed;
+}
+
+
+
+.calendar-calendar tr td.today, .calendar-calendar tr.odd td.today, .calendar-calendar tr.even td.today {
+	background-color: transparent;
+}
+
+.calendar-calendar .week-view .full div.single-day div.weekview, .calendar-calendar .day-view .full div.single-day div.dayview {
+	background: $blue;
+}
+
+.calendar-calendar .week-view .full div.single-day div.weekview, .calendar-calendar .day-view .full div.single-day div.dayview {
+	border: none;
+}
+
+.calendar-calendar .month-view .full .inner .monthview, .calendar-calendar .week-view .full .inner .weekview, .calendar-calendar .day-view .full .inner .dayview {
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.calendar-calendar .week-view .full div.single-day div.weekview, .calendar-calendar .day-view .full div.single-day div.dayview {
+	padding: 0;
+}
+
+
+.calendar-calendar .month-view .full td.single-day div.monthview, 
+.calendar-calendar .week-view .full td.single-day div.weekview, 
+.calendar-calendar .day-view .full td.single-day div.dayview {
+	background: $blue;
+}
+.date-display-single {
+	color: white;
+}
+
+.calendar-calendar .month-view .full td.date-box.today,
+.calendar-calendar .month-view .full tr td.single-day.today {
+	border: none;
+	background: #f2a900;
+}
+.month.day {
+	// color: white; 
+}
+
+
+
+// Mini Calendar rewrites
+
+.month.mini-day-on, .month.mini-day-off{
+	min-height:2em;
+	text-align: left;
+	background: #F7F7F7;
+	font-size: .8em;
+	padding: 2px;	
+}
+
+.month.mini-day-on{
+	background: $blue;
+
+}
+.month.mini-day-on a:link,
+.month.mini-day-on a:active,
+.month.mini-day-on a:hover,
+.month.mini-day-on a:visited{
+	color:white;
+}
+
+.mini.today .month.mini-day-off {
+	background: #f2a900;
+	color: white;
+}
+
+
+.calendar-calendar{
+	th.days {
+		font-weight: 100;
+	}
+	tbody{
+		border: 1px solid #e3e3e3;
+	}
+}

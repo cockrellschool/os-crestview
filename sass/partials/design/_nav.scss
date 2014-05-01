@@ -1,0 +1,195 @@
+
+nav#block-os-primary-menu {
+  @include breakpoint($mobile-break) { 
+        border-bottom: 12px solid #cc5500; 
+    }
+}
+  
+
+  .nav{
+  // background-color:lighten($gray,70%);
+  display: none;
+  margin-top:1.75em;
+  padding: 0 1em;
+  background-color: white;
+
+  
+    overflow: hidden;
+    
+
+  // @include backgroundGradient(#ffffff,#e6e6e6);
+
+  @include breakpoint($mobile-break) {  
+    display: block;
+    padding: 0;
+    margin-top:.0;
+    background-color: transparent;
+  }
+    @include breakpoint($tablet-break) {  
+    height:30px;
+    margin-bottom: 20px;
+  }
+
+}
+
+.menu-wrapper{
+  margin:0;
+}
+
+#menu-bar {
+  ul li{
+    margin-right: 40px;
+    display: block;
+
+    @include breakpoint($mobile-break) {  
+        display: inline-block;
+    }
+  }
+}
+#menu-bar ul li a {
+  border-bottom: solid 1px #FFF;
+  font-size: 1.6em;
+  line-height: 2;
+  padding:0;
+
+  @include breakpoint($mobile-break) {  
+      border-bottom: none;
+      font-size: .9em;
+      line-height: inherit;
+  }
+
+  // @include breakpoint($tablet-break) {  
+  //     font-size: .9em;
+  // }
+
+  @include breakpoint($desktop-break) {  
+      font-size: 1.1em;
+  }
+}
+
+
+#menu-bar ul li:last-child a{
+  border-bottom: none;
+}
+
+ul.nice-menu, ul.nice-menu ul {
+
+}
+
+
+.nice-menu li, .menu li {
+  font-size: 1em;
+  line-height: 34px;
+  font-weight: bold;
+  float:none !important;
+  padding:0;
+  margin:0;
+  display:inline-block;
+}
+
+#block-os-primary-menu{
+  ul.menu li a:link, ul.menu li a:visited {
+     padding-left: 25px;
+  }
+}
+
+.nice-menu a, .nice-menu a:visited, .menu a, .menu a:visited {
+  display:block;
+  font-family: $headerfont;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration:none;
+  font-size:1.3em;
+  font-weight: normal;
+}
+
+ul.nice-menu a {
+  color: $gray;
+}
+
+.book-menu ul.menu li a, #block-book-navigation ul.menu li a, .block-boxes-os_boxes_booktoc ul.menu li a, .sidebar .menu a {
+
+}
+.menu a:hover {
+  color:#007bc4;
+}
+.menu a.active, .menu a:hover.active, ul.nice-menu a.active, ul.nice-menu a:hover.active, .navigation ul.menu li ul.menu li a.active, .navigation ul li ul li a.active, .block-boxes-os_boxes_booktoc ul.menu li a.active {
+  color:$blue;
+}
+
+ul.nice-menu-down {
+  float:none !important;
+}
+
+.navicon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width:18px;
+  height: 18px;
+  
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  line-height: 1.3rem;
+  margin: .5rem;
+  padding: 7px 7px 5px 7px;
+  background-color: #3d97d3;
+  border-right: 1px solid #297cb4;
+  border-bottom: 1px solid #297cb4;
+  display: block;
+  
+  @include breakpoint($mobile-break) {  
+    display: none;
+  }
+}
+
+#block-boxes-os-booktoc div ul li a{
+    margin-bottom: 1em;
+    margin:0;
+    padding: 0;
+    padding-bottom: .5em;
+
+    color:$orange;
+    font-size: 1.1em;
+    background: none;
+    font-style: normal;
+    font-weight: normal;
+    font-family: $headerfont;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+#block-boxes-os-booktoc div ul li a:active{
+    font-style: normal;
+    font-weight: normal;
+}
+
+#block-boxes-os-booktoc div ul li ul li {
+  width: 100%;
+}
+
+
+#block-boxes-os-booktoc div ul li ul li a{
+
+    color:#306696;
+    font-family: $headerfont;
+    text-transform: none;
+    line-height: 1.2; 
+    // font-size: .9em;
+
+    border-bottom: dotted lighten($gray, 50) 1px;
+    // padding-bottom: .25em;
+    // font-style: inherit;
+    // font-weight: inherit;
+}
+
+
+#block-boxes-os-booktoc div ul li ul li a:active{
+
+}
+
+
+

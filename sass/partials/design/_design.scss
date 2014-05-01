@@ -1,0 +1,332 @@
+@import "header";
+@import "homepage";
+@import "calendar";
+@import "buttons";
+@import "nav";
+@import "forms"; 
+@import "interior-pages"; 
+@import "footer"; 
+//@import "compass/css3/box-shadow";
+
+
+// TAGS
+
+html {  } 
+
+body {
+  background: #ffffff;
+  color:#555555;
+  font:62.5%/1.5em $basefont;
+}
+
+a, a:visited {
+  color:#306696;
+  }
+ 
+a:hover {
+  color:#13a3eb; 
+}
+
+span{
+	line-height: 1.5;
+}
+
+h1 a, h2 a, h3 a {
+  font-style: normal;
+  font-family: $headerfont;
+    -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+	font-family:$headerfont;
+	font-weight:normal;
+}
+
+h2{
+  	font-family: $bodyfont;
+	font-weight:normal;
+}
+
+h3, .node-title, .block-title, .views-field-title {
+	font-family:$headerfont;
+	font-weight:normal !important;
+	font-size:1.1em;
+	margin-bottom:1em;
+}
+
+header .node-title {
+	text-transform: uppercase;
+}
+
+
+
+
+.container {width:100%	}
+
+#page-wrapper:before {
+	content: url('../images/cselogo.png');
+	display:none;
+}
+#page {
+	position:relative;
+	font-size:1.3em;
+	@include breakpoint($tablet-break) { 
+		margin-top: 50px;
+	}
+}
+#page-wrapper {
+	// border: dotted 1px #ccc;
+	max-width: $desktop-break;
+	margin: 0 auto;
+	padding:0 15px;
+	// margin-top: -90px;
+
+	@include breakpoint($tablet-break) { 
+ 		margin-top: 0;
+	}
+}
+#page-wrapper:before {
+	position:absolute;
+	top:-60px;
+	right:0;
+	width: 320px;
+	height: 45px;
+}
+
+
+.navbar-on {
+	padding-top:0 !important;
+ }
+
+// .views-row, .view-id-os_image_gallery li.views-row {
+// 	margin-bottom: 3em;
+// }
+.header-left.header-main.header-right .region-header-first, .header-left.header-main .region-header-first {
+	margin-left: 0; 
+}
+
+.content-inner p{
+	margin-bottom: 1em;
+}
+
+.view-os-events.view-id-os_events .view-header {
+	padding-top: 0;
+}
+
+#boxes-box-site_logo img{
+	// width:180px;
+	margin-left: 1em;
+}
+
+.block-inner{
+  margin: 0;
+}
+
+.region-header-second{
+	width:100%;
+}
+
+
+
+.node ul.links, .more-link {
+	margin-top: .5em;
+	text-align: right;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+#content-panels {
+	margin: .5em 0;
+
+	@include breakpoint($tablet-break) {  
+		// margin: 0 0 0 80px;
+	}
+	@include breakpoint($desktop-break) {  
+		
+	}
+}
+
+#columns{
+	margin-top: 0;
+	// background: white;
+
+  @include breakpoint($mobile-break) { 
+	margin-top: 0;
+  }
+}
+
+#boxes-box-site_info {
+margin-left: -10px;
+}
+
+
+.view-os-events a.colorbox-inline {
+	color: white;
+}
+.view-os-events a:hover.colorbox-inline {
+	color: #ededed;
+}
+
+.content-inner {
+	padding: 0;
+	
+
+}
+.content-inner #content *, .node-bio p {
+	font-size: .95rem;
+	line-height: 1.6em;
+}
+.content-inner p, .node-bio p {
+	font-family: $bodyfont;
+}
+
+.page-node #content-column .content-inner {
+	padding: 0;
+
+	@include breakpoint($desktop-break) { 
+ 		padding: 0
+	}
+}
+
+#main-content {
+	font-family: $bodyfont;
+	margin: 0;
+	padding-top:14px;
+
+	@include breakpoint($mobile-break) { 
+	}
+
+	@include breakpoint($tablet-break) { 
+		// margin: 0 0 0 13px;
+		
+	}
+}
+
+.views-field-media-gallery-description,  .views-field-title, .views-field-media-gallery-file {
+	margin-bottom:1em;	
+}
+.block-title {
+	color: $orange;
+}
+.sidebar h3 {
+	margin-bottom: .25em;
+}
+div.litecal .litecal-title h3.litecal-title {
+	text-transform: uppercase;
+	color: $orange;
+	font-size: 1.25em;
+	margin-bottom: .25em;
+}
+#content-left, #content-right, #content-bottom {
+	font-size: .9em;
+}
+
+#block-boxes-scholar_presentations_recent h3.title, #block-boxes-scholar_publications_recent h3.title, #block-views-scholar_events_upcoming-block_1 h3.title {
+	text-transform: uppercase;
+	margin-bottom: .25em;
+}
+
+#content-main .view-id-scholar_presentations .views-row, #content-main #boxes-box-scholar_publications_recent .views-row {
+	margin: 0;
+}
+
+#content-main .view-id-scholar_presentations .views-row a, #content-main #boxes-box-scholar_publications_recent .views-row a, #content-main .view-scholar-events-upcoming .views-row a {
+	font-style: normal;
+	text-decoration: underline;
+	color: #717073;
+}
+
+.more-link {
+	text-align: left;
+	text-transform: uppercase;
+	font-size: .75em;
+}
+
+.more-link a, .more-link a:visited {
+	font-style: normal;
+	font-weight: bold;
+	color: $blue;
+}
+
+
+.view-id-os_image_gallery .views-field-title .field-content a {
+	font-weight: normal;
+}
+.node-person .field-name-field-professional-title {
+	font-weight: normal;
+}
+
+.block-boxes-os_boxes_html {
+	display: block;
+
+	// @include breakpoint($tablet-break) { 
+ // 		display: inherit
+	// }
+}
+
+
+// Overwrite slideshow styles
+
+.block-boxes-os_boxes_slideshow {
+	overflow: hidden;
+	width: 50%;
+}
+
+.views_slideshow_slide img {
+	padding: 0;
+}
+.view-os-image-gallery-slideshow {
+	background: none;
+	display:none;
+
+	@include breakpoint($mobile-break) { 
+ 		display: block;
+	}
+
+}
+
+// People
+
+.view-id-os_profiles h1 {
+	margin: 0;
+}
+
+.block.block-boxes-os_boxes_html ul, .block .field-name-body ul {
+	margin-left: 1em;
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+.node-bio p {
+	font-size: 1.2em;
+}
+.node-bio p strong{
+	font-weight: bold;
+	font-family: $bodyfont;
+}
+
+
+
+
+.item-list ul li {
+	font-size: 1.1em;
+	// line-height: 1.5;
+	font-family: $bodyfont;
+}
+
+
+// Publications
+
+
+.biblio-category-section > .biblio-entry:before {
+	// content: ">> ";
+}
+
+
+

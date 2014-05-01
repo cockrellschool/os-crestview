@@ -1,0 +1,36 @@
+////////////////////////
+// Variables Partials
+////////////////////////
+
+$mobile-break: 420px;
+$tablet-break: 768px;
+$desktop-break: 960px;
+
+// $login-break:790px;
+
+$logo-break: 910px;
+
+$basefont: Helvetica, Arial, sans-serif;
+$headerfont:'montserratregular', 'Arial', sans-serif;
+$bodyfont: Calibri, Lucida Grande, Sans Serif;
+
+ 
+// colors
+$box-color: rgba(white,.75);
+$box-stroke: #ccc;
+$text-color: #444;
+$top-bar-text-color: white;
+$mini-nav-text: #fff;
+$gray: #333333;
+$green: #26ae5f;
+$blue: #2D85C3;
+$red: #c0392b;
+$orange: #e36f1e;
+
+$border-radius: .2rem;
+
+$grids: 2;
+//$grids: add-grid(4 at $desktop-break);
+ $gutters: .5; 
+  
+   
