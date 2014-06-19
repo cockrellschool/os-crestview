@@ -75,7 +75,12 @@ nav#block-os-primary-menu {
 ul.nice-menu, ul.nice-menu ul {
 
 }
-
+ul.nice-menu a {
+padding: 0 !important;
+}
+ul.nice-menu li:not(:last-of-type) a {
+padding: 0 1em 0 0 !important;
+}
 
 .nice-menu li, .menu li {
   font-size: 1em;

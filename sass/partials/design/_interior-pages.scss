@@ -6,7 +6,6 @@
 .not-front{
 
 	@include breakpoint($tablet-break) {  
-		background-image: url(../images/bg-interior.png);
 		background-repeat: repeat-x;
 		border-bottom: none;
 	}

@@ -4,7 +4,7 @@
 // ******************
 
 body.front{
- 
+ .section-wrapper.columns {
 	background-image: url(../images/bg.png);
 	background-position: 0 -155px;
 	background-repeat: no-repeat;
@@ -20,6 +20,7 @@ body.front{
 	  	background-position: 0 0;
 
 	}
+ }
 
 	.region-content-top > div {
 

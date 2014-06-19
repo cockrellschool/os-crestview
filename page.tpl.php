@@ -24,7 +24,7 @@
 			$page['header_bottom']
 			): ?>
 			<!--header regions beg-->
-			<header id="header" class="clearfix" role="banner">
+			<div class="section-wrapper header"><header id="header" class="clearfix" role="banner">
 			 <div id="header-container">
 				 <div id="header-panels" class="at-panel gpanel panel-display three-col clearfix">
 					  <?php print render($page['header_top']); ?>
@@ -33,7 +33,7 @@
 					  <?php print render($page['header_bottom']); ?>
 				 </div>
 			  </div>
-		  </header>
+		  </header></div>
 		  <div class="clickable btn navicon">
 			  <svg version="1.1" id="Untitled-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 width="18px" height="12px" viewBox="0 0 18 12" enable-background="new 0 0 18 12" xml:space="preserve">
@@ -49,7 +49,7 @@
 
 		<?php if($menu_bar = render($page['menu_bar'])): ?>
 		  <!--main menu region beg-->
-		  <?php print $menu_bar; ?>
+		  <div class="section-wrapper menu"><?php print $menu_bar; ?></div>
 		  <!--main menu region end-->
 		<?php endif; ?>
 
@@ -59,7 +59,7 @@
 		  <!--help region end-->
 		<?php endif; ?>
 
-		<div id="columns" class="clearfix">
+		<div class="section-wrapper columns"><div id="columns" class="clearfix">
 			<div class="hg-container">
 				<div id="content-column" role="main">
 					<div class="content-inner">
@@ -147,11 +147,11 @@
         <?php endif; ?>
 
 			</div>
-		</div>
+		</div></div>
 
 
 		<!--footer region beg-->
-		<footer id="footer" class="clearfix" role="contentinfo">
+		<div class="section-wrapper"><footer id="footer" class="clearfix" role="contentinfo">
 		<!-- Three column 3x33 Gpanel -->
 		<?php if (
 			$page['footer_top'] ||
@@ -196,13 +196,7 @@
 
 
 </div>
-
-
-
-
-
-
-  </footer>
+  </footer></div>
 
   </div>
 
@@ -217,11 +211,11 @@
 
 <?php if ($branding_footer = render($page['branding_footer'])): ?>
   <!--FLEXIBLE ADMIN FOOTER FOR USE BY SELECT GROUPS USING OS-->
-  <div id="branding_footer">
+  <div class="section-wrapper"><div id="branding_footer">
 		<div class="branding-container">
 	    <?php print $branding_footer; ?>
 		</div>
-  </div>
+  </div></div>
 <?php endif; ?>
 
 

@@ -75,16 +75,21 @@ header .node-title {
 		margin-top: 50px;
 	}
 }
-#page-wrapper {
+.section-wrapper {
 	// border: dotted 1px #ccc;
+	> div, > header, > footer, > nav {
 	max-width: $desktop-break;
 	margin: 0 auto;
 	padding:0 15px;
 	// margin-top: -90px;
+	}
 
 	@include breakpoint($tablet-break) { 
  		margin-top: 0;
 	}
+}
+.section-wrapper.header {
+	border-bottom:15px solid #cc5500;
 }
 #page-wrapper:before {
 	position:absolute;
@@ -162,7 +167,7 @@ header .node-title {
 }
 
 #boxes-box-site_info {
-margin-left: -10px;
+/*margin-left: -10px;*/
 }
 
 
